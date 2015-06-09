@@ -43,6 +43,7 @@
                         <li><a href="#accueil">Accueil</a></li>
                         <li><a href="#actualites">Actualités</a></li>
                         <li><a href="#agenda">Programme</a></li>
+                        <li><a href="#pratique">Pratique</a></li>
                         <li><a href="#sponsors">Sponsors</a></li>
                         <li><a href="#team">Team</a></li>
                     </ul>
@@ -90,6 +91,7 @@
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#actualites">Actualités</a></li>
                 <li><a href="#agenda">Programme</a></li>
+                <li><a href="#pratique">Pratique</a></li>
                 <li><a href="#sponsors">Sponsors</a></li>
                 <li><a href="#team">Team</a></li>
 
@@ -111,7 +113,7 @@
 
 <div id="accueil" class="container">
 
-    <h2>Introduction</h2>
+    <h2 class="breizhcamp-style">Introduction</h2>
 
     <p class="lead">La conférence des développeurs du grand ouest</p>
 
@@ -130,12 +132,12 @@
 
 <div id="actualites" class="container">
 
-    <h2>Actualités</h2>
+    <h2 class="breizhcamp-style">Actualités</h2>
 
     <div class="row">
         <div class="col-sm-6">
 
-            <h3>Sold out !</h3>
+            <h3 class="breizhcamp-style">Sold out !</h3>
 
             <p>A peine une semaine après avoir été ouverte, la <a href="https://www.weezevent.com/breizhcamp-2015"><i>billetterie</i></a>
                 a fermé suite à une affluence record.
@@ -143,7 +145,7 @@
                 sponsors n'utilisant pas toutes les places qui leur sont
                 réservées nous permettent de procéder à un tirage au sort.</p>
 
-            <h3>Programme</h3>
+            <h3 class="breizhcamp-style">Programme</h3>
 
             <p>Nous avons reçu près de deux fois plus de propositions que de sessions disponibles, le commité de
                 sélection a donc patiemment revu chaque sujet et voté, et
@@ -151,7 +153,7 @@
                 détaillé sera publié rapidement.</p>
         </div>
         <div class="col-sm-6 col-right">
-            <h3>Notre lettre d'information</h3>
+            <h3 class="breizhcamp-style">Notre lettre d'information</h3>
 
             <p>Soyez informé de toute l'actualité du BreizhCamp en vous abonnant à notre lettre d'information. Des nouvelles
                 fraîches, des exclusivités, quelques surprises ... bref, de quoi patienter en attendant que la date de la
@@ -171,19 +173,19 @@
 
 <div class="divider"></div>
 <div id="agenda" class="container" ng-app="Programme" ng-controller="ProgrammeCtrl">
-    <h2>Programme</h2>
+    <h2 class="breizhcamp-style">Programme</h2>
 
     <div class="row" id="legende">
         <div class="col-sm-6">
             formats :
             <ul>
-                <li><i class="fa fa-fw fa-slideshare"></i> : <em>Conférence</em>, 50 minutes pour apprendre un max</li>
-                <li><i class="fa fa-fw fa-wrench"></i> : <em>Tools in Action</em>, 25 minutes avec un max de démo</li>
-                <li><i class="fa fa-fw fa-clock-o"></i> : <em>Quickie</em>, 15 minutes pour vous convaincre</li>
-                <li><i class="fa fa-fw fa-flask"></i> : <em>Hands on Lab</em>, 2h les mains dans le cambouis</li>
-                <li><i class="fa fa-fw fa-terminal"></i> : <em>Hackathon</em>, à vous de jouer !</li>
-                <li><i class="fa fa-fw fa-user"></i> : <em>Keynote</em>, des trucs sérieux (ou pas)</li>
-                <li><i class="fa fa-fw fa-gears"></i> : <em>Autres</em>, tout le reste</li>
+                <li><span class="fa fa-fw fa-slideshare"></span> : <em>Conférence</em>, 50 minutes pour apprendre un max</li>
+                <li><span class="fa fa-fw fa-wrench"></span> : <em>Tools in Action</em>, 25 minutes avec un max de démo</li>
+                <li><span class="fa fa-fw fa-clock-o"></span> : <em>Quickie</em>, 15 minutes pour vous convaincre</li>
+                <li><span class="fa fa-fw fa-flask"></span> : <em>Hands on Lab</em>, 2h les mains dans le cambouis</li>
+                <li><span class="fa fa-fw fa-terminal"></span> : <em>Hackathon</em>, à vous de jouer !</li>
+                <li><span class="fa fa-fw fa-user"></span> : <em>Keynote</em>, des trucs sérieux (ou pas)</li>
+                <li><span class="fa fa-fw fa-gears"></span> : <em>Autres</em>, tout le reste</li>
             </ul>
         </div>
         <div class="col-sm-6">
@@ -203,7 +205,7 @@
 
     <div class="row">
         <div class="col-sm-12">
-            <h3 ng-show="loading">Chargement du programme...</h3>
+            <h3 class="breizhcamp-style" ng-show="loading">Chargement du programme...</h3>
 
             <div id="programme" class="ng-cloak">
 
@@ -268,12 +270,58 @@
 
 <div class="divider"></div>
 
-<div id="sponsors" class="container">
+<div id="pratique" class="container">
 
-    <h2>Sponsors &amp; Partenaires</h2>
+    <h2 class="breizhcamp-style">Informations pratiques</h2>
 
     <div class="row">
-        <h3>Platinum</h3>
+        <div class="col-sm-6">
+
+            <p>Le BreizhCamp se tient dans les locaux de notre partenaire historique, l'<a href="http://www.istic.univ-rennes1.fr/">ISTIC</a>, sur le campus de Beaulieu à Rennes.</p>
+
+            <h3 class="breizhcamp-style">Adresse</h3>
+
+            <address>
+                ISTIC<br>
+                Campus de Beaulieu<br>
+                263, avenue du Général Leclerc<br>
+                35042 RENNES
+            </address>
+
+            <h3 class="breizhcamp-style">Transports en commun</h3>
+
+            <p>Le bus vous permet de vous rendre facilement sur place depuis…</p>
+            <p>… la station <em>République</em> située au centre-ville de Rennes. Vous pourrez y emprunter, au choix&nbsp;:</p>
+            <ul>
+                <li>la ligne <a target="_blank" href="http://www.star.fr/fileadmin/documents/PDF/horaires/urbaines/LC4-40.pdf">C4</a>, direction <em>ZA SAINT-SULPICE</em>,</li>
+                <li>la ligne <a target="_blank" href="http://www.star.fr/fileadmin/documents/PDF/horaires/urbaines/LC4-40.pdf">40ex</a>, direction <em>BEAULIEU ATALANTE</em>,</li>
+                <li>la ligne <a target="_blank" href="http://www.star.fr/fileadmin/documents/PDF/horaires/urbaines/L6.pdf">6</a>, direction <em>CESSON-SÉVIGNÉ</em>.</li>
+            </ul>
+            <p>… la gare SNCF&nbsp;:</p>
+            <p>Il est possible, le matin entre 7H30 et 9H, d'emprunter la ligne directe <a target="_blank" href="http://www.star.fr/fileadmin/documents/PDF/horaires/urbaines/L41.pdf">41ex</a>.
+            En dehors de cette période, le plus simple est de prendre le métro direction <em>Kennedy</em> jusqu'à <em>République</em> avant d'emprunter l'un des bus indiqués ci-dessus.</p>
+
+            <p>Dans tous les cas, pensez simplement à descendre à la station <em>Tournebride</em>&nbsp;!</p>
+        </div>
+        <div class="col-sm-6">
+            <iframe width="600" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="http://www.openstreetmap.org/export/embed.html?bbox=-1.6404497623443601%2C48.1138605034168%2C-1.6367536783218384%2C48.11651795740327&amp;layer=mapnik&amp;marker=48.11532%2C-1.63861"
+                    style="border: 1px solid black"></iframe>
+            <br>
+            <small>
+                <a target="_blank" href="http://www.openstreetmap.org/way/81586972#map=17/48.11534/-1.63872">Afficher une carte plus grande</a>
+            </small>
+        </div>
+    </div>
+    
+</div>
+
+<div id="sponsors" class="container">
+
+    <h2 class="breizhcamp-style">Sponsors &amp; Partenaires</h2>
+
+    <div class="row">
+        <h3 class="breizhcamp-style">Platinum</h3>
     </div>
     <div class="row platinum">
         <div class="col-sm-6">
@@ -285,7 +333,7 @@
         </div>
     </div>
     <div class="row">
-        <h3>Gold</h3>
+        <h3 class="breizhcamp-style">Gold</h3>
     </div>
     <div class="row gold">
         <div class="col-sm-4">
@@ -308,7 +356,7 @@
         </div>
     </div>
     <div class="row">
-        <h3>Silver</h3>
+        <h3 class="breizhcamp-style">Silver</h3>
     </div>
     <div class="row silver">
         <div class="col-sm-3">
@@ -339,7 +387,7 @@
         </div>
     </div>
     <div class="row">
-        <h3>Partenaires</h3>
+        <h3 class="breizhcamp-style">Partenaires</h3>
     </div>
     <div class="row partenaires">
         <div class="col-sm-6">
@@ -356,7 +404,7 @@
 
 <div id="team">
     <div class="container">
-        <h2>Team BreizhCamp</h2>
+        <h2 class="breizhcamp-style">Team BreizhCamp</h2>
     </div>
 </div>
 

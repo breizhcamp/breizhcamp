@@ -151,7 +151,7 @@
         ],
         "title": "DevConferences, l'annuaire des conf\u00e9rences et communaut\u00e9s de d\u00e9veloppeurs en France",
         "track": "",
-        "replay": ""
+        "replay": "http://youtu.be/1700nKJYAdk"
     },
     {
         "description": "Un projet Java EE pour faire du CRUD c'est : 4j pour un pom.xml, 12j pour les entities, 24j pour une couche de service, 19j pour des pages web et 11j pour \u00e9crire les tests! Mais non !!! Je vous fais tout \u00e7a en 30 minutes top chrono avec JBoss Forge.... et j'aurai m\u00eame le temps de vous montrer les entrailles de Forge et comment l'\u00e9tendre pour r\u00e9pondre \u00e0 vos besoins.",
@@ -437,7 +437,7 @@
         ],
         "title": "Forger son propre clavier. Pourquoi ? Comment ?",
         "track": "",
-        "replay": ""
+        "replay": "https://www.parleys.com/talk/forger-son-propre-clavier-pourquoi-comment"
     },
     {
         "description": "Vous voulez exposer votre tablette \u00e0 vos clients, leurs donner acc\u00e8s \u00e0 une application sans pour autant qu'ils puissent installer d'applications ou changer les param\u00e8tres ? C'est conf\u00e9rence est pour vous !\r\n \r\nUne des nouveaut\u00e9s d'Android Lollipop est d'apporter un ensemble d'API \"pour les espaces de travail et l'\u00e9ducation\". Nous verrons, en 15 minutes, comment tirer parti de ces API - notamment  autour du Screen Pinning et du Device Policy Manager -  pour cr\u00e9er une application Android Lollipop (API 21) type \"Kiosque\", pour restreindre les utilisateurs \u00e0 n'utiliser qu'une application sp\u00e9cifique. \r\n\r\nCe talk peut r\u00e9pondre \u00e0 des besoins clients pr\u00e9cis qui souhaitent ouvrir leurs tablettes au public tout en en limitant l'usage : showrooms, agences & services publics, bar & restaurants, centre a\u00e9r\u00e9s, \u00e9coles, etc..",
@@ -465,7 +465,7 @@
         ],
         "title": "DIY : Java Static Analysis",
         "track": "",
-        "replay": ""
+        "replay": "https://www.parleys.com/tutorial/diy-java-static-analysis"
     },
     {
         "description": "C'est l'histoire d'un mec qui voulait jouer avec un Launchpad pour devenir le prochain Daft Punk. Mais comme c'\u00e9tait plus difficile que pr\u00e9vu, il a pr\u00e9f\u00e9r\u00e9 d\u00e9velopper une API Java pour piloter l'appareil et lui trouver des usages inattendus. \r\n\r\nPuis, comme tout le monde n'a pas de Launchpad chez soi, le mec (sympa) a d\u00e9velopp\u00e9 un \u00e9mulateur web temps r\u00e9el ultra-moderne avec du Vertx embedded, des websockets et du SVG.\r\n\r\nVous l'avez devin\u00e9, le mec en question, c'est moi, et je vous attends nombreux pour une session color\u00e9e et interactive !",
@@ -571,7 +571,7 @@
         ],
         "title": "F**k your code - with style",
         "track": "",
-        "replay": ""
+        "replay": "https://www.parleys.com/talk/f-k-your-code-style-1"
     },
     {
         "description": "La s\u00e9curit\u00e9, pourtant primordiale dans nos SI, est souvent n\u00e9glig\u00e9e par incompr\u00e9hension et consid\u00e9r\u00e9e comme la responsabilit\u00e9 d'experts en cryptographie mol\u00e9culaire.\r\n\r\nPourtant, en tant que dev / ops, j'ai \u00e9t\u00e9 amener \u00e0 diagnostiquer des probl\u00e8mes obscures de certificats avec des messages d'erreurs qui sont souvent incompr\u00e9hensible.\r\n\r\nMais je m'en suis sortie et ce domaine n'est en fait pas si complexe si on prend 15 minutes pour l'expliquer.",
@@ -613,7 +613,7 @@
         ],
         "title": "Introduction au Software Defined Networking",
         "track": "",
-        "replay": ""
+        "replay": "https://www.parleys.com/tutorial/introduction-au-software-defined-network"
     },
     {
         "description": "How to mix SQL and NoSQL worlds without a revolution?\r\n\r\nThis live coding talk will show you how to add elasticsearch in your legacy application without changing all your habits. Your application will be able to have advanced search features without the need of writing complex SQL code!\r\n\r\nDavid will start from a RestX, Hibernate, Postgresql application and will add live during this session a complete integration of elasticsearch:\r\n\r\n* Why should we add NoSQL search?\r\n* bad practices (JDBC river, external batch...)\r\n* how to represent business entities in NoSQL documents?\r\n* elasticsearch beyonder project\r\n* How to live without transactions inside a transactional application?\r\n",
@@ -641,7 +641,7 @@
         ],
         "title": "Merci Docker, tu m'as aid\u00e9 \u00e0 respecter les SLA de mon service Support Client.",
         "track": "",
-        "replay": ""
+        "replay": "https://www.parleys.com/talk/merci-docker"
     },
     {
         "description": "[Gulp](http://gulpjs.com/) est un module node.js de gestion des diff\u00e9rentes \u00e9tapes de construction (build) d'une application.\r\n\r\nCet atelier sera anim\u00e9 par Matthieu BRECHET et Lo\u00efc TRUCHOT sous la forme d'un Tools In Action (on vous fait d\u00e9couvrir l'outil dans des conditions r\u00e9elles).\r\n\r\nNiveau requis : les bases du d\u00e9veloppement en JavaScript\r\n",
@@ -719,7 +719,7 @@
         ],
         "title": "Pourquoi PHP ?",
         "track": "",
-        "replay": ""
+        "replay": "https://www.parleys.com/talk/pourquoi-php"
     },
     {
         "description": "Les APIs sont partout, \u00e0 tous les coins de rue du Web !\r\nDe pr\u00e9f\u00e9rence, soyons \"rest\", dans le style, pour \u00eatre hip.\r\nEt pour \u00eatre encore plus hype, qu'est-ce qu'on peut faire de fun avec Groovy et ses APIs ?\r\nDans cette session, je vous proposer de nous int\u00e9resser \u00e0 ces APIs Web, \u00e0 l'interaction qu'on peut avoir avec un langage tel que Groovy, comment les tester avec Spock pour le petit c\u00f4t\u00e9 \"Enterprise\".",
@@ -1079,7 +1079,7 @@
         ],
         "title": "DevOps dans ton chat !",
         "track": "",
-        "replay": ""
+        "replay": "https://www.parleys.com/tutorial/devops-dans-ton-chat"
     },
     {
         "description": "What attracts researchers starting from the 60s till nowadays? What is studied in university by engineers in computer science and then successfully forgotten? What is at the heart of the compilers used daily by any software developer? Parsers! From a practical point of view using a small pill of theory, this session will bring lights on questions like: if there is so many parser-generators based on formal theory, then why javac, GCC and Clang are all hand-written? And how we, insiders of the world of parsing, do this at SonarSource for languages like Java, C/C++, C#, JavaScript, Python, COBOL?",
@@ -1129,7 +1129,7 @@
         ],
         "title": "History of cryptography : the sod Machofeminist way",
         "track": "",
-        "replay": ""
+        "replay": "https://www.parleys.com/tutorial/history-cryptography-sod-machofeminist-way"
     },
     {
         "description": "Marre de votre serveur d'application ? Envie d'un framework l\u00e9ger pour d\u00e9velopper des web services ? Alors venez essayer Dropwizard ! \r\nDans une session de live coding nous allons d\u00e9velopper un service REST, y ajouter des m\u00e9triques pour \u00eatre pote avec les Ops, le tester unitairement et d\u00e9ployer tout \u00e7a sans serveur d'application.",
@@ -1253,7 +1253,7 @@
         ],
         "title": "React, une autre façon de penser vos composants graphiques",
         "track": "",
-        "replay": ""
+        "replay": "https://www.parleys.com/tutorial/react-une-autre-facon-de-penser-vos-composants-graphiques-1"
     },
     {
         "description": "De plus en plus, nos applications sont amenées à interroger une pléthore d'APIs REST et à s'adapter à leur support : hier, il n'y avait que le desktop et le browser web comme support de nos applis, aujourd'hui, nous sommes dans l'ère des devices (mobiles, tablettes, etc.) avec leurs contraintes propres (réseau, batterie, etc.).\n\nDans cette session, nous verrons comment économiser des data. D'abord, en éliminant les polling inutiles en appliquant le « Hollywood principle » (à une API REST) : don't poll us, we will push you. Ensuite, en réduisant la taille des data via la RFC-6902 qui répond aussi au doux nom de « JSON-Patch ».\n\nEt tout ça en nous appuyant sur une appli Javascript avec le dernier framework JS de la mort qui tue (AngularJS saupoudré de famo.us ou Aurelia.io ...).",

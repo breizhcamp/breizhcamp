@@ -1,7 +1,7 @@
 [
     {
         "description": "Le but de cet atelier est de faire collaborer des enfants et des adultes pour construire une machine a r\u00e9action en chaine avec des Lego. \r\nPendant la construction, Aur\u00e9lien prendra en graphic recording (facilitation graphique) les remarques et les points marquants qui ressortiront pendant l'atelier.\r\nA la fin de l'atelier, une r\u00e9trospective sera r\u00e9alis\u00e9e avec les enfants pour exprimer ce qu'ils ont aim\u00e9 et ce qu'ils am\u00e9lioreraient s'ils pouvaient refaire l'atelier",
-        "format": "Tools-in-Action",
+        "format": "Autres",
         "id": "GXE-0181",
         "speakers": [
             {
@@ -17,8 +17,8 @@
         "track": ""
     },
     {
-        "description": "Cette atelier ludique vous invite \u00e0 vivre la vie de d\u00e9veloppeurs et d'op\u00e9rationnels qui doivent mettre un produit \u00e0 disposition des utilisateurs.\r\n\r\nComp\u00e9tences requises: Savoir manipuler des legos \r\n\r\nA travers ce jeu, vous comprendrez l'importance du mouvement DevOps dans la r\u00e9ussite des projets informatiques.  ",
-        "format": "Autres formats de conf\u00e9rence",
+        "description": "Cette atelier ludique vous invite \u00e0 vivre la vie de d\u00e9veloppeurs et d'op\u00e9rationnels qui doivent mettre un produit \u00e0 disposition des utilisateurs.\r\n\r\nComp\u00e9tences requises: Savoir manipuler des legos \r\n\r\nA travers ce jeu, vous comprendrez l'importance du mouvement DevOps dans la r\u00e9ussite des projets informatiques.",
+        "format": "Autres",
         "id": "CRS-9058",
         "speakers": [
             {
@@ -57,7 +57,7 @@
     },
     {
         "description": "Apache Mesos apporte une abstraction des ressources CPU, m\u00e9moire et stockage, d'un ensemble de machines (physiques ou virtuelles). Un cluster Mesos forme un syst\u00e8me distribu\u00e9, tol\u00e9rant \u00e0 la panne et permettant de scaler les services d\u00e9ploy\u00e9s. Venez d\u00e9couvrir fonctionnalit\u00e9s, strat\u00e9gies de d\u00e9ploiement, et son \u00e9cosyst\u00e8me qui apporte scalabilit\u00e9 et d\u00e9couverte de services. Nous visiterons un cluster h\u00e9bergeant une application Play, du InfluxDB, du Grafana, dont certains dans des containers Docker. Pour finir, nous jouerons au Chaos Monkey afin de prouver la r\u00e9silience du syst\u00e8me mis en place.",
-        "format": "Autres formats de conf\u00e9rence",
+        "format": "Autres",
         "id": "GFP-9786",
         "speakers": [
             {
@@ -95,7 +95,7 @@
     },
     {
         "description": "2h pour savourer quelques morceaux choisis de la formation \"_Masterclass Expertise Java_\"  d'Olivier Croisier\r\n\r\nLa Masterclass Expertise Java est un cursus d'\u00e9lite visant \u00e0 former les meilleurs leaders techniques et architectes Java. En 4 jours intenses, les futurs experts acquerront une compr\u00e9hension claire des principes de conception des principales API du JDK, ainsi que des d\u00e9tails techniques de leur impl\u00e9mentation. Un fort accent sera mis sur les performances, la robustesse du code et les bonnes pratiques industrielles.",
-        "format": "Hand's on Labs",
+        "format": "Conférence",
         "id": "WLN-4787",
         "speakers": [
             {
@@ -235,7 +235,7 @@
         "track": ""
     },
     {
-        "description": "Desired State Configuration.. quelle expression bizarre! Dans cette session, vous pourrez d\u00e9couvrir comment il est possible de scripter son infrastructure dans Azure de mani\u00e8re d\u00e9clarative et de faire du test unitaire, le tout uniquement en PowerShell. ",
+        "description": "Desired State Configuration.. quelle expression bizarre! Dans cette session, vous pourrez d\u00e9couvrir comment il est possible de scripter son infrastructure dans Azure de mani\u00e8re d\u00e9clarative et de faire du test unitaire, le tout uniquement en PowerShell.",
         "format": "Tools-in-Action",
         "id": "CJQ-5273",
         "speakers": [
@@ -291,7 +291,7 @@
         "track": ""
     },
     {
-        "description": "Avec des versions diff\u00e9rentes du progiciel simultan\u00e9ment chez de nombreux clients, pourquoi avons-nous d\u00e9cid\u00e9 de passer de SVN \u00e0 Git ? Pourquoi notre choix s\u2019est-il port\u00e9 sur le mod\u00e8le GitFlow pour g\u00e9rer toutes les branches ? Comment s\u2019est d\u00e9roul\u00e9e cette migration ? Et surtout, sommes-nous satisfaits du r\u00e9sultat ? ",
+        "description": "Avec des versions diff\u00e9rentes du progiciel simultan\u00e9ment chez de nombreux clients, pourquoi avons-nous d\u00e9cid\u00e9 de passer de SVN \u00e0 Git ? Pourquoi notre choix s\u2019est-il port\u00e9 sur le mod\u00e8le GitFlow pour g\u00e9rer toutes les branches ? Comment s\u2019est d\u00e9roul\u00e9e cette migration ? Et surtout, sommes-nous satisfaits du r\u00e9sultat ?",
         "format": "Quickie",
         "id": "NFI-6145",
         "speakers": [
@@ -313,7 +313,7 @@
                 "href": "http://cfp.breizhcamp.org/api/conferences/BreizhCamp2015/speakers/2e15eb74e12b2ced91aeb74046a72c2bf587d150"
             }
         ],
-        "title": " Introduction to Android Wear - A Glimpse Into the Future",
+        "title": "Introduction to Android Wear - A Glimpse Into the Future",
         "track": ""
     },
     {
@@ -334,7 +334,7 @@
         "track": ""
     },
     {
-        "description": "L'exp\u00e9rience utilisateur est une discipline peu connue et encore tr\u00e8s n\u00e9glig\u00e9e en France, en particulier lors de la conception d'applications m\u00e9tier. Pourtant, une bonne ergonomie am\u00e9liore la productivit\u00e9 et facilite l'adoption par les usagers.\r\nDans beaucoup de projets, en particulier en mode agile, le d\u00e9veloppeur participe \u00e0 la d\u00e9finition de l'interface et des fonctionnalit\u00e9s. Cette conf\u00e9rence le sensibilisera \u00e0 l'importance de l'exp\u00e9rience utilisateur et lui donnera quelques cl\u00e9s pour savoir comment l'am\u00e9liorer. ",
+        "description": "L'exp\u00e9rience utilisateur est une discipline peu connue et encore tr\u00e8s n\u00e9glig\u00e9e en France, en particulier lors de la conception d'applications m\u00e9tier. Pourtant, une bonne ergonomie am\u00e9liore la productivit\u00e9 et facilite l'adoption par les usagers.\r\nDans beaucoup de projets, en particulier en mode agile, le d\u00e9veloppeur participe \u00e0 la d\u00e9finition de l'interface et des fonctionnalit\u00e9s. Cette conf\u00e9rence le sensibilisera \u00e0 l'importance de l'exp\u00e9rience utilisateur et lui donnera quelques cl\u00e9s pour savoir comment l'am\u00e9liorer.",
         "format": "Conf\u00e9rence",
         "id": "VMG-5038",
         "speakers": [
@@ -395,7 +395,7 @@
                 "href": "http://cfp.breizhcamp.org/api/conferences/BreizhCamp2015/speakers/17b46aebf003f4795a92cd2fe66ba1d3d88436f5"
             }
         ],
-        "title": "Venez d\u00e9couvrir CDI, la perle de Java EE !",
+        "title": "Venez découvrir CDI, la perle de Java EE !",
         "track": ""
     },
     {
@@ -425,7 +425,7 @@
         "track": ""
     },
     {
-        "description": "L'analyse statique permet de detecter des bugs et des probl\u00e8mes dans votre code sans l'executer. Cette pr\u00e9sentation vous promet, en toute simplicit\u00e9, d'ecrire votre propre analyseur pour Java bas\u00e9 sur SonarQube. Pour y arriver il faudra comprendre les challenges d'analyse du langage, du parsing \u00e0 l'execution symbolique,  pour pouvoir coder des v\u00e9rifications specifiques \u00e0 vos projets ! ",
+        "description": "L'analyse statique permet de detecter des bugs et des probl\u00e8mes dans votre code sans l'executer. Cette pr\u00e9sentation vous promet, en toute simplicit\u00e9, d'ecrire votre propre analyseur pour Java bas\u00e9 sur SonarQube. Pour y arriver il faudra comprendre les challenges d'analyse du langage, du parsing \u00e0 l'execution symbolique,  pour pouvoir coder des v\u00e9rifications specifiques \u00e0 vos projets !",
         "format": "Conf\u00e9rence",
         "id": "OTL-6921",
         "speakers": [
@@ -477,7 +477,7 @@
         "track": ""
     },
     {
-        "description": "Open BCI est un \u00e9lectro-enc\u00e9phalogramme en kit opensource (Brain Computer Interface) permettant de lire les diff\u00e9rentes ondes provenant de nos cerveaux (EEG), de nos muscles (EMG) et de notre coeur (EKG). Gr\u00e2ce aux outils fournis avec le kit et \u00e0 la nature opensource du projet, les possibilit\u00e9s sont sont infinies :-)\r\n\r\nDans cette session nous verrons comment acc\u00e9der \u00e0 toutes les mesures offertes par le kit, comment les traiter et peut-\u00eatre comment piloter vos application par la pens\u00e9e \u00e0 travers divers exemples et d\u00e9mos. ",
+        "description": "Open BCI est un \u00e9lectro-enc\u00e9phalogramme en kit opensource (Brain Computer Interface) permettant de lire les diff\u00e9rentes ondes provenant de nos cerveaux (EEG), de nos muscles (EMG) et de notre coeur (EKG). Gr\u00e2ce aux outils fournis avec le kit et \u00e0 la nature opensource du projet, les possibilit\u00e9s sont sont infinies :-)\r\n\r\nDans cette session nous verrons comment acc\u00e9der \u00e0 toutes les mesures offertes par le kit, comment les traiter et peut-\u00eatre comment piloter vos application par la pens\u00e9e \u00e0 travers divers exemples et d\u00e9mos.",
         "format": "Tools-in-Action",
         "id": "VWC-7991",
         "speakers": [
@@ -615,7 +615,7 @@
                 "href": "http://cfp.breizhcamp.org/api/conferences/BreizhCamp2015/speakers/b1f772b5cf753f38775a68a12624814f57ab9c12"
             }
         ],
-        "title": "Gulp\u00a0Fiction\u00a0: surveiller, tester, builder, livrer... sans tomber dans les poms",
+        "title": "Gulp Fiction : surveiller, tester, builder, livrer... sans tomber dans les poms",
         "track": ""
     },
     {
@@ -662,7 +662,7 @@
         "track": ""
     },
     {
-        "description": "\"Quand on est un vrai d\u00e9veloppeur, on ne fait pas de PHP !\" C'est, dans l'esprit, une remarque assez courante dans le milieu du d\u00e9veloppement. Il y a du vrai dans les propos lanc\u00e9s contre ce langage, mais cela fait-il avancer le d\u00e9bat ? Laissez moi vous parler de PHP, son pass\u00e9, son pr\u00e9sent et son futur. Car une technologie, qui fait fonctionner autant de sites Internet \u00e0 tr\u00e8s fort trafic, ne peut pas avoir que des mauvais cot\u00e9s ... ",
+        "description": "\"Quand on est un vrai d\u00e9veloppeur, on ne fait pas de PHP !\" C'est, dans l'esprit, une remarque assez courante dans le milieu du d\u00e9veloppement. Il y a du vrai dans les propos lanc\u00e9s contre ce langage, mais cela fait-il avancer le d\u00e9bat ? Laissez moi vous parler de PHP, son pass\u00e9, son pr\u00e9sent et son futur. Car une technologie, qui fait fonctionner autant de sites Internet \u00e0 tr\u00e8s fort trafic, ne peut pas avoir que des mauvais cot\u00e9s ...",
         "format": "Conf\u00e9rence",
         "id": "JOH-4392",
         "speakers": [
@@ -761,7 +761,7 @@
         "track": ""
     },
     {
-        "description": "Mod\u00e9liser ses donn\u00e9es dans ElasticSearch peut para\u00eetre simple quand il s'agit de benner ses logs, mais cela se complique quand on veut y faire entrer toutes les donn\u00e9es de son m\u00e9tier, issues de diff\u00e9rents SI en prenant en compte toutes les contraintes techniques  et/ou organisationnelles d'une grosse (et ancienne) entreprise. L\u00e0, \u00e7a devient un vrai casse-t\u00eate ! ",
+        "description": "Mod\u00e9liser ses donn\u00e9es dans ElasticSearch peut para\u00eetre simple quand il s'agit de benner ses logs, mais cela se complique quand on veut y faire entrer toutes les donn\u00e9es de son m\u00e9tier, issues de diff\u00e9rents SI en prenant en compte toutes les contraintes techniques  et/ou organisationnelles d'une grosse (et ancienne) entreprise. L\u00e0, \u00e7a devient un vrai casse-t\u00eate !",
         "format": "Conf\u00e9rence",
         "id": "SSS-9318",
         "speakers": [
@@ -770,7 +770,7 @@
                 "href": "http://cfp.breizhcamp.org/api/conferences/BreizhCamp2015/speakers/deeee961f87318719698761fcc1cd3289a8bd526"
             }
         ],
-        "title": "Comment (ne pas r\u00e9ussir \u00e0) mod\u00e9liser ses  data dans Elasticsearch",
+        "title": "Comment (ne pas r\u00e9ussir \u00e0) mod\u00e9liser ses data dans Elasticsearch",
         "track": ""
     },
     {
@@ -981,7 +981,7 @@
                 "href": "http://cfp.breizhcamp.org/api/conferences/BreizhCamp2015/speakers/0c420b457d168d907e2de6cdf807edf442169389"
             }
         ],
-        "title": "Latence applicative et API en streaming ",
+        "title": "Latence applicative et API en streaming",
         "track": ""
     },
     {

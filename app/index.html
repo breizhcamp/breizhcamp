@@ -182,128 +182,33 @@
     </div>
 </div>
 
-<div id="videos" class="container">
+<div id="videos" class="container" ng-app="replay" ng-controller="ReplayCtrl">
     <h2 class="breizhcamp-style">Les sessions</h2>
 
-    <ul>
-        <li><a href="https://www.parleys.com/tutorial/history-cryptography-sod-machofeminist-way">History of
-            cryptography : the sod Machofeminist way</a> - Sébastien Lambour, Audrey Neveu
-        </li>
-        <li>45 outils pour doper votre front-end - Nicolas Pennec</li>
-        <li>Designing Capitaine Train Mobile Experience - Cyril Mottier</li>
-        <li>Broker de messages Kafka, retour d'expérience - Vladislav Pernin</li>
-        <li>MongoDB et Elastic{search}, meilleurs ennemis ? - Sébastien Prunier, Chris Woodrow</li>
-        <li><a href="https://www.parleys.com/tutorial/diy-java-static-analysis">DIY : Java Static Analysis</a> - Nicolas
-            PERU
-        </li>
-        <li>Initiation au Machine Learning avec Spark - Alban Phélip, Mathieu Breton, Yoann Benoit</li>
-        <li>Savoir faire le deuil de son code - Ellène Dijoux Siber</li>
-        <li>Lego 4 Devops - Sébastien Fauvel</li>
-        <li>ASP.NET 5 et MVC 6 : la révolution est en marche - Benjamin Talmard, Jean-Philippe Gouigoux</li>
-        <li>Gulp Fiction : surveiller, tester, builder, livrer... sans tomber dans les poms - Loïc Truchot, Matthieu
-            Bréchet
-        </li>
-        <li>Mesos University - Aurélien Maury, Pablo Lopez, Jean-Baptiste Claramonte, Jean-Pascal Thiery</li>
-        <li>Haskell : du sol au plafond - Arnaud Bailly</li>
-        <li>Kanbanzine : comment aborder Kanban de manière ludique - Denis ROUDET, Serge HARDY</li>
-        <li>Comment git a sauvé notre projet (ou presque) - Cécilia Bossard</li>
-        <li>Not only SQL avec PostgreSQL - Pierre-Alban DEWITTE</li>
-        <li>Des jeux et énigmes \"grandeur nature\" avec Raspberry Pi, Arduino et de l'électronique - Sylvain
-            Révéreault
-        </li>
-        <li>OpenBCI ou comment lire dans les pensées en Java - Mathieu ANCELIN</li>
-        <li>Beyond Polymer: a comparison of web components libraries - Horacio Gonzalez</li>
-        <li>Introduction à Rust - Christophe Augier</li>
-        <li>Performance Pudding, une recette simple et économique. - Vincent Beretti</li>
-        <li><a href="https://www.parleys.com/talk/forger-son-propre-clavier-pourquoi-comment">Forger son propre clavier.
-            Pourquoi ? Comment ?</a> - Guillaume Collic
-        </li>
-        <li>Dropwizard en un éclair - Ludovic Chane Won In</li>
-        <li>[Le Dev et l'Ops] Docker en production ? - Sylvain Révéreault, Nicolas De loof</li>
-        <li>Masterclass Expertise Java - Olivier Croisier</li>
-        <li>L'expérience utilisateur est importante pour nous - Florence Herrou</li>
-        <li>Angular 2, Le Réveil de la Force - Grégory Houllier, Nicolas Pennec</li>
-        <li>Tristan Nitot sous vidéosurveillance - Tristan Nitot</li>
-        <li>Tout ce que vous avez toujours voulu savoir sur les clients Java HTTP concurrents, asynchrones, sans oser
-            demander! - Jonathan Roquelaure
-        </li>
-        <li>Coder son jeu de shoot 2D avec HTML5 et Javascript - Alan Menant</li>
-        <li>Tester une application Javascript - Guillaume Ehret</li>
-        <li>Déboguage de JavaScript - Christophe Jollivet</li>
-        <li>Travailler dans une startup la tête dans les nuages - Nicolas Ledez</li>
-        <li>Groovy, son histoire, son oeuvre ! - Guillaume Laforge</li>
-        <li><a href="https://www.parleys.com/tutorial/devops-dans-ton-chat">DevOps dans ton chat !</a> - Sébastien
-            BROUSSE
-        </li>
-        <li>Microplugins avec Docker - Julien Vey, Éric Bellemon</li>
-        <li>Refactoring avec 1,22% de code couvert par les tests ... Golden Master testing à la rescousse ! - Sébastien
-            Prunier
-        </li>
-        <li> Introduction to Android Wear - A Glimpse Into the Future - Cyril Mottier</li>
-        <li>Développer des applications multiplateformes facilement à l'aide de Ionic - Stéphanie MOALLIC</li>
-        <li>Créez une véritable application kiosque avec Android Lollipop - Florent DUPONT</li>
-        <li><a href="https://www.parleys.com/tutorial/react-une-autre-facon-de-penser-vos-composants-graphiques-1">React,
-            une autre façon de penser vos composants graphiques</a> - Mathieu ANCELIN
-        </li>
-        <li>Lego Collaboration game - adultes et enfants - Aurélien Morvant, Damien ROQUEL</li>
-        <li>Mindstorms4Scrum - l'agilité en codant - Aurélien Morvant, Simon JAILLAIS</li>
-        <li><a href="https://www.parleys.com/tutorial/introduction-au-software-defined-network">Introduction au Software
-            Defined Networking</a> - Sylvain Révéreault
-        </li>
-        <li>Thermosmart, le thermostat connecté - Alexandre Thomazo</li>
-        <li>Stockage et analyse temps réel d'événements avec Riak chez Booking.com - Damien krotkine</li>
-        <li>Latence applicative et API en streaming - Nicolas Babel, Cédric Tran-Xuan</li>
-        <li>Venez découvrir CDI, la perle de Java EE ! - Antonio Goncalves</li>
-        <li>Cryptography : THE swiss army knife of secured APIs - Sébastien Lambour</li>
-        <li>Réduis ton empreinte carbone avec du Push et JSON-Patch - Cédric Tran-Xuan</li>
-        <li><a href="https://www.parleys.com/talk/f-k-your-code-style-1/">F**k your code - with style</a> - Olivier
-            Croisier
-        </li>
-        <li>TDD: is it all about tests ? - Nicolas PERU</li>
-        <li>Passez à ES6 dès aujourd'hui avec BabelJS - Grégory Houllier</li>
-        <li>D3js par l'exemple - Rossi Oddet</li>
-        <li>Security matters - Mathieu Pousse</li>
-        <li><a href="http://youtu.be/1700nKJYAdk">DevConferences, l'annuaire des conférences et communautés de
-            développeurs en France</a> - Sébastien Prunier, Chris Woodrow, Mathieu ANCELIN
-        </li>
-        <li>Déploiement incrémental chez Pages Jaunes : feature flipping et traffic manager - Christophe Desmarest,
-            Stéphane PIEL
-        </li>
-        <li>De Java à Erlang, je suis toujours vivant! - Olivier Gonthier</li>
-        <li>Premiers pas avec Docker - Jean-Tiare Le Bigot</li>
-        <li>Python après 15 ans de JAVA - Pierre-Alban DEWITTE</li>
-        <li>Changing the wheel of a moving car - faire évoluer l'infra sans interruption - Nicolas De loof</li>
-        <li>JHipster, le générateur d'applications Spring + AngularJS - Julien Dubois</li>
-        <li>Et la diversité dans tout ça ? - Cécilia Bossard, Jean Paliès</li>
-        <li>The Art of Parsing - Evgeny Mandrikov, Nicolas PERU</li>
-        <li>On a connecté le Studio ! - Sameh BEN FREDJ, Qian Jin</li>
-        <li>Débuter avec Apache Storm - Clément Juste</li>
-        <li>BDD & Cucumber - features first - Renan Michaud, Cyrille CAILLAUD</li>
-        <li>Les bons outils CSS font les bons ouvriers du Web - Alvin Berthelot</li>
-        <li>LP4J, a song of Java, MIDI and websockets - Olivier Croisier</li>
-        <li>Docktor Monitoring Stack - Yvonnick Esnault</li>
-        <li>Hands on Kibana 4 - Lucian Precup, Nicolas Giraud</li>
-        <li>La technique de la bulle - Frédéric Menou</li>
-        <li>Comment (ne pas réussir à) modéliser ses data dans Elasticsearch - Bruno Bonnin</li>
-        <li><a href="https://www.parleys.com/talk/merci-docker">Merci Docker, tu m'as aidé à respecter les SLA de mon
-            service Support Client</a> - Hung BUI
-        </li>
-        <li><a href="https://www.parleys.com/talk/pourquoi-php/">Pourquoi PHP ?</a> - Frederic Bouchery</li>
-        <li>Hand's on Web Components with Polymer - Horacio Gonzalez, Audrey Neveu</li>
-        <li>Java EE en 30 minutes - Antonio Goncalves</li>
-        <li>Les développeurs aussi maîtrisent le systemd - Jean-Eudes Couignoux</li>
-        <li>Infrastructure as a code avec PowerShell DSC - Fabien Dibot</li>
-        <li>MQTT en action - Laurent HUET</li>
-        <li>Apache Lucene - Adrien Grand</li>
-        <li>Sculpter votre infrastructure avec Terraform - Julien Vey, Éric Bellemon</li>
-        <li>Modulariser son application AngularJS avec Browserify - Antoine Richard</li>
-        <li>Rest groovy, man! - Guillaume Laforge</li>
-        <li>Advanced search for your legacy application - David Pilato</li>
-        <li>Keynote - Christel Le Coq</li>
-        <li>Retour vers le (passé|futur)* avec Git - Haja Rambelontsalama</li>
-        <li>Hashons peu mais hashons bien - Olivier Bourgain, Olivier Croisier</li>
+    <input class="form-control input-sm" type="search" placeholder="Filtrer les sessions affichées ci-dessous…"
+           autofocus
+           ng-model="talkFilter">
+    <br>
 
-    </ul>
+    <div class="table-responsive">
+        <table class="table table-condensed table-striped table-hover">
+            <thead>
+            <tr>
+                <th>Titre</th>
+                <th>Speakers</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="talk in talks | filter:talkFilter track by talk.id">
+                <td ng-switch="!!talk.replay">
+                    <a ng-switch-when="true" href="{{talk.replay}}" target="_blank" ng-bind="talk.title"></a>
+                    <span ng-switch-default ng-bind="talk.title"></span>
+                </td>
+                <td ng-bind="::speakers(talk)"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
 
 <div id="sponsors" class="container">
@@ -428,8 +333,23 @@
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.9.3/lodash.min.js"></script>
 <script src="js/scroll.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script>
+<script>
+    angular.module('replay', []);
+    angular.module('replay').controller('ReplayCtrl', ['$scope', '$http', function ($scope, $http) {
 
+        $scope.speakers = function (talk) {
+            return _.map(talk.speakers,function (speaker) {
+                return speaker.fullname;
+            }).join(', ');
+        };
+
+        $http.get('./json/talks.json').then(function (response) {
+            $scope.talks = response.data;
+        });
+    }]);
+</script>
 </body>
 </html>

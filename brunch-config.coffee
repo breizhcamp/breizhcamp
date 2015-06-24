@@ -11,6 +11,8 @@ exports.config =
   plugins:
     less:
       optimize: true
+    jshint:
+      pattern: /^(app|vendor)\/.*\.js$/
   overrides:
     production:
       optimize: true

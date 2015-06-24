@@ -1,10 +1,11 @@
 {
   "name": "BreizhCamp2015",
-    "version": "0.1.0",
-    "private": true,
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-        "javascript-brunch": ">= 1.0 < 1.9",
-        "less-brunch": ">= 1.0 < 1.9",
-        "uglify-js-brunch": ">= 1.0 < 1.9"
+    "javascript-brunch": ">= 1.0 < 1.9",
+    "jshint-brunch": ">= 1.0 < 1.9",
+    "less-brunch": ">= 1.0 < 1.9",
+    "uglify-js-brunch": ">= 1.0 < 1.9"
   }
 }

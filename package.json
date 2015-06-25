@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "auto-reload-brunch": ">= 1.0 < 1.9",
+    "digest-brunch": "^1.5.1",
     "javascript-brunch": ">= 1.0 < 1.9",
     "jshint-brunch": ">= 1.0 < 1.9",
     "less-brunch": ">= 1.0 < 1.9",

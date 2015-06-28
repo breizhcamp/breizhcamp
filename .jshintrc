@@ -1,0 +1,5 @@
+{
+    "globalstrict": true,
+    "quotmark": "single",
+    "predef": [ "angular", "_", "module", "require" ]
+}

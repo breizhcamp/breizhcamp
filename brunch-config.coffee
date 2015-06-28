@@ -1,4 +1,6 @@
 exports.config =
+  conventions:
+    ignored: '/^_.+/' # for _config.yml to be copied in production
   files:
     javascripts:
       joinTo:

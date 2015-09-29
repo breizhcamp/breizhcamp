@@ -12,3 +12,9 @@ $ npm install
 $ bower install
 $ brunch w
 ```
+
+Ou via Docker : 
+```bash
+$ docker build -t breizhcamp-www ./
+$ docker run -p 3333:3333 breizhcamp-www
+```

@@ -94,13 +94,53 @@ body {
 
 
 .masthead {
-  background: url(../img/header.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height:700px;
   color:@dark;
+
+  .video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+
+    &.demo-video {
+      background-image: url(videos/programming-ide.jpg);
+    }
+
+    video {
+      position: absolute;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%,-50%);
+      -moz-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+    }
+  }
+
+  .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none; /* Allows right click menu on the video */
+    background: rgba(0,0,0,0.5); /* You can play with the opacity */
+  }
 
   h1,h2,h3,h4 {
     color:@dark;

@@ -1,0 +1,7 @@
+web:
+  build: .
+  ports:
+    - "3333:3333" #web server
+    - "9485:9485" #live reload
+  volumes:
+    - ./app:/opt/breizhcamp/app

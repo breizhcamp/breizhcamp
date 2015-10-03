@@ -3,3 +3,5 @@ build
 public
 .idea
 *.iml
+node_modules
+app/bower_modules

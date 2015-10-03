@@ -22,3 +22,5 @@ exports.config =
       plugins:
         autoReload:
           enabled: false
+  watcher:
+    usePolling: true

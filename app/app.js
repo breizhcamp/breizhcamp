@@ -11,7 +11,7 @@ module.exports = {
                 }).join(', ');
             };
 
-            $http.get('./json/talks.json').then(function (response) {
+            $http.get('./json/2015/talks.json').then(function (response) {
                 $scope.talks = response.data;
             });
         }]);

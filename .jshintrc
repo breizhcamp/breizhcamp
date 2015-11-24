@@ -1,5 +1,9 @@
 {
     "globalstrict": true,
     "quotmark": "single",
-    "predef": [ "angular", "_", "module", "require" ]
+    "predef": [ "angular", "_", "module", "require" ],
+    "globals": {
+        "console": false,
+        "document":false
+    }
 }

@@ -1,5 +1,8 @@
+'use strict';
+
+var $ = require('jquery');
+
 $(document).ready(function () {/* affix the navbar after scroll below header */
-    'use strict';
     $('#nav').affix({
         offset: {
             top: $('header').height() - $('#nav').height()

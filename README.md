@@ -12,11 +12,12 @@ Testé avec  NodeJS v4.2.1
 ```bash
 $ npm install -g brunch@1.8.5 bower
 $ npm install
+$ npm install -g bower
 $ bower install
 $ brunch w
 ```
 
-Ou via Docker : 
+Ou via Docker :
 ```bash
 $ docker build -t breizhcamp-www ./
 $ docker run -p 3333:3333 breizhcamp-www

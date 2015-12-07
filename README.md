@@ -10,8 +10,9 @@ Pour tester chez vous :
 Testé avec  NodeJS v4.2.1
 
 ```bash
-$ npm install -g brunch@1.8.5
+$ npm install -g brunch@1.8.5 bower
 $ npm install
+$ bower install
 $ brunch w
 ```
 

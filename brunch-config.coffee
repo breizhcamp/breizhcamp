@@ -15,6 +15,8 @@ exports.config =
       optimize: true
     jshint:
       pattern: /^(app|vendor)\/.*\.js$/
+    digest:
+      environments: []
   overrides:
     production:
       optimize: true

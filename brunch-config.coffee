@@ -4,8 +4,9 @@ exports.config =
   files:
     javascripts:
       joinTo:
-        'js/vendor.js': /^bower_components/
-        'js/app.js': /^(app|vendor)/
+        'js/vendor.js': /^bower_components/,
+        'js/app.js': /^(app|vendor)/,
+        'js/appProgramme.js': /^(appProgramme|vendor)/
     stylesheets:
       joinTo: 'styles/main.css'
   server:

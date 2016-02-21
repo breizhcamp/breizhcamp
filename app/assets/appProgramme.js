@@ -3,7 +3,6 @@
 angular.module('programme', ['ngSanitize','hc.marked'])
   .controller('programmeCtrl', ['$scope', '$http', 'marked', function ($scope, $http, marked) {
 
-    console.log('programmeCtrl -> OK');
     $scope.confs = [];
     $scope.tias = [];
     $scope.quickies = [];

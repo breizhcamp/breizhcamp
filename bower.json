@@ -25,8 +25,19 @@
     "lodash": "~3.10.1",
     "angular": "~1.4.8",
     "angular-sanitize": "~1.4.8",
+    "angular-animate": "~1.4.8",
     "font-awesome": "~4.5.0",
-    "angular-marked": "1.0.1"
+    "angular-marked": "1.0.1",
+    "angular-i18n": "~1.4.8",
+    "angular-bootstrap": "^1.1.2",
+    "angular-ui-calendar": "^1.0.1"
   },
-  "overrides": {}
+  "overrides": {
+    "angular-i18n": {
+      "main": "angular-locale_fr-fr.js"
+    }
+  },
+  "resolutions": {
+    "angular": "~1.4.8"
+  }
 }

@@ -90,6 +90,7 @@ angular.module('programme', ['ngSanitize', 'hc.marked', 'ngLocale', 'ngAnimate',
                     return {
                         title: talk.name,
                         format: talk.format,
+                        category: talk.event_type,
                         description: talk.description,
                         speakers: talk.speakers,
                         start: talk.event_start,

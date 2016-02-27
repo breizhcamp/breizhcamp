@@ -9,14 +9,16 @@ angular.module('programme', ['ngSanitize', 'hc.marked', 'ngLocale', 'ngAnimate',
             {format: 'Quickie', label: 'Quickie', icon: 'fa-clock-o'},
             {format: 'Lab', label: 'Lab', icon: 'fa-flask'}];
 
-        var trackDefinitions = {
-            'Track1': {color: '#C9880F'},
-            'Track2': {color: '#BB283C'},
-            'Track3': {color: '#287F95'},
-            'Track4': {color: '#F55E52'},
-            'Track5 (labs)': {color: '#6B4162'},
-            'Keynote': {color: '#FFFFFF'},
-            'Pause': {color: '#FFFFFF'}
+        var categoryColors = this.categoryColors = {
+            'Objects connectés, IoT, Robotique': '#4B8865',
+            'Cloud, DevOps, Outils': '#CA5132',
+            'Agilité, Méthodologie et Tests': '#C9880F',
+            'BigData et Analytics': '#BB283C',
+            'Architecture, Performance et Sécurité': '#6B4162',
+            'Java, JVM, Javas SE/EE': '#7F71CE',
+            'Langages': '#6AAA3E',
+            'Web': '#287F95',
+            'Keynote': '#F55E52'
         };
 
         var formats = this.formats = _.indexBy(formatDefinitions, 'format');
@@ -70,6 +72,8 @@ angular.module('programme', ['ngSanitize', 'hc.marked', 'ngLocale', 'ngAnimate',
 
             var talks = response.data;
 
+            console.log(_.uniq(_.map(talks, 'event_type')));
+
             /*
             this.days = _.transform(_.groupBy(talks, function(talk) {
                 return _.capitalize(dateFilter(new Date(talk.event_start), 'EEEE'));
@@ -90,7 +94,7 @@ angular.module('programme', ['ngSanitize', 'hc.marked', 'ngLocale', 'ngAnimate',
                         speakers: talk.speakers,
                         start: talk.event_start,
                         end: talk.event_end,
-                        color: trackDefinitions[talk.venue].color
+                        color: categoryColors[talk.event_type]
                     };
                 })
             };

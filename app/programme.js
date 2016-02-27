@@ -3,23 +3,32 @@
 angular.module('programme', ['ngSanitize', 'hc.marked', 'ngLocale', 'ngAnimate', 'ui.bootstrap', 'ui.calendar'])
     .controller('ProgrammeCtrl', ['$scope', '$http', 'marked', 'dateFilter', '$uibModal', function($scope, $http, marked, dateFilter, $uibModal) {
 
-        var formatDefinitions = [{format: 'Conf', label: 'Conférences', icon: 'fa-slideshare'},
-            {format: 'TiA', label: 'Tools in Action', icon: 'fa-wrench'},
-            {format: 'Univ', label: 'Universités', icon: 'fa-terminal'},
-            {format: 'Quickie', label: 'Quickies', icon: 'fa-clock-o'},
-            {format: 'Lab', label: 'Labs', icon: 'fa-flask'}];
+        var formatDefinitions = this.formatDefinitions = [{format: 'Conf', label: 'Conférence', icon: 'fa-slideshare'},
+            {format: 'TiA', label: 'Tool in Action', icon: 'fa-wrench'},
+            {format: 'Univ', label: 'Université', icon: 'fa-terminal'},
+            {format: 'Quickie', label: 'Quickie', icon: 'fa-clock-o'},
+            {format: 'Lab', label: 'Lab', icon: 'fa-flask'}];
 
-        var trackColors = {
-            'Track1': '#C9880F',
-            'Track2': '#BB283C',
-            'Track3': '#287F95',
-            'Track4': '#F55E52',
-            'Track5 (labs)': '#6B4162',
-            'Keynote': '#FFFFFF',
-            'Pause': '#FFFFFF'
+        var trackDefinitions = {
+            'Track1': {color: '#C9880F'},
+            'Track2': {color: '#BB283C'},
+            'Track3': {color: '#287F95'},
+            'Track4': {color: '#F55E52'},
+            'Track5 (labs)': {color: '#6B4162'},
+            'Keynote': {color: '#FFFFFF'},
+            'Pause': {color: '#FFFFFF'}
         };
 
         var formats = this.formats = _.indexBy(formatDefinitions, 'format');
+
+        function renderTitle(event) {
+            return '<span class="fa-stack" title="' + formats[event.format].label + '">' +
+                '<i class="fa fa-square fa-stack-2x"></i>' +
+                '<i style="color:' + event.color + ';" class="fa fa-stack-1x fa-inverse ' + formats[event.format].icon + '"></i> ' +
+                '</span> ' + event.title +
+                (event.room ? ' <em>(' + event.room + ')</em>' : '');
+        }
+
         this.formatOrder = _.map(formatDefinitions, 'format');
 
         this.calendarConfig = {
@@ -50,13 +59,18 @@ angular.module('programme', ['ngSanitize', 'hc.marked', 'ngLocale', 'ngAnimate',
             },
             eventClick: function(calEvent) {
                 this.details(calEvent);
-            }.bind(this)
+            }.bind(this),
+            eventRender: function(event, element) {
+                element.find('.fc-title').html(renderTitle(event));
+                element.attr('title', event.title); // pour voir le titre en tooltip
+            }
         };
 
         $http.get('json/2016/schedule.json').then(function(response) {
 
             var talks = response.data;
 
+            /*
             this.days = _.transform(_.groupBy(talks, function(talk) {
                 return _.capitalize(dateFilter(new Date(talk.event_start), 'EEEE'));
             }), function(result, talks, day) {
@@ -65,6 +79,7 @@ angular.module('programme', ['ngSanitize', 'hc.marked', 'ngLocale', 'ngAnimate',
                 };
                 return result;
             });
+            */
 
             this.agenda = {
                 events: _.map(talks, function(talk) {
@@ -75,7 +90,7 @@ angular.module('programme', ['ngSanitize', 'hc.marked', 'ngLocale', 'ngAnimate',
                         speakers: talk.speakers,
                         start: talk.event_start,
                         end: talk.event_end,
-                        color: trackColors[talk.venue]
+                        color: trackDefinitions[talk.venue].color
                     };
                 })
             };

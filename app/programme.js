@@ -1,13 +1,15 @@
 'use strict';
 
 angular.module('programme', ['ngSanitize', 'hc.marked', 'ngLocale', 'ngAnimate', 'ui.bootstrap', 'ui.calendar'])
-    .controller('ProgrammeCtrl', ['$scope', '$http', 'marked', 'dateFilter', '$uibModal', function($scope, $http, marked, dateFilter, $uibModal) {
+    .controller('ProgrammeCtrl', ['$scope', '$http', 'marked', 'dateFilter', '$uibModal', 'uiCalendarConfig', function($scope, $http, marked, dateFilter, $uibModal, uiCalendarConfig) {
 
-        var formatDefinitions = this.formatDefinitions = [{format: 'Conf', label: 'Conférence', icon: 'fa-slideshare'},
+        var formatDefinitions = this.formatDefinitions = [
+            {format: 'Conf', label: 'Conférence', icon: 'fa-slideshare'},
             {format: 'TiA', label: 'Tool in Action', icon: 'fa-wrench'},
             {format: 'Univ', label: 'Université', icon: 'fa-terminal'},
             {format: 'Quickie', label: 'Quickie', icon: 'fa-clock-o'},
-            {format: 'Lab', label: 'Lab', icon: 'fa-flask'}];
+            {format: 'Lab', label: 'Lab', icon: 'fa-flask'}
+        ];
 
         var categoryColors = this.categoryColors = {
             'Objects connectés, IoT, Robotique': '#4B8865',
@@ -21,7 +23,7 @@ angular.module('programme', ['ngSanitize', 'hc.marked', 'ngLocale', 'ngAnimate',
             'Keynote': '#F55E52'
         };
 
-        var formats = this.formats = _.indexBy(formatDefinitions, 'format');
+        var formats = _.indexBy(formatDefinitions, 'format');
 
         function renderTitle(event) {
             return '<span class="fa-stack" title="' + formats[event.format].label + '">' +
@@ -31,7 +33,11 @@ angular.module('programme', ['ngSanitize', 'hc.marked', 'ngLocale', 'ngAnimate',
                 (event.room ? ' <em>(' + event.room + ')</em>' : '');
         }
 
-        this.formatOrder = _.map(formatDefinitions, 'format');
+        function refresh(calendar) {
+            if (uiCalendarConfig.calendars[calendar]) {
+                uiCalendarConfig.calendars[calendar].fullCalendar('refetchEvents');
+            }
+        }
 
         this.calendarConfig = {
             defaultDate: '2016-03-23',
@@ -68,6 +74,25 @@ angular.module('programme', ['ngSanitize', 'hc.marked', 'ngLocale', 'ngAnimate',
             }
         };
 
+        // filters key must match the event property the filter object aim to filter
+        var filters = this.filters = {};
+        // Category filter
+        var categories = _.keys(categoryColors);
+        filters.category = _.object(categories, _.map(categories, function() {
+            return false;
+        }));
+        // Format filter
+        filters.format = _.mapValues(formats, false);
+
+        // watch filters
+        _.each(filters, function(filterObject) {
+            $scope.$watchCollection(function() {
+                return filterObject;
+            }, function() {
+                refresh('calendar');
+            });
+        });
+
         $http.get('json/2016/schedule.json').then(function(response) {
 
             var talks = response.data;
@@ -83,19 +108,32 @@ angular.module('programme', ['ngSanitize', 'hc.marked', 'ngLocale', 'ngAnimate',
             });
             */
 
+            function activeFilters() {
+                return _.pick(filters, function(filterObject) {
+                    return _.any(filterObject, Boolean);
+                });
+            }
+
             this.agenda = {
-                events: _.map(talks, function(talk) {
-                    return {
-                        title: talk.name,
-                        format: talk.format,
-                        category: talk.event_type,
-                        description: talk.description,
-                        speakers: talk.speakers,
-                        start: talk.event_start,
-                        end: talk.event_end,
-                        color: categoryColors[talk.event_type]
-                    };
-                })
+                events: function(start, end, timezone, callback) {
+                    var filters = activeFilters();
+                    callback(_.filter(_.map(talks, function(talk) {
+                        return {
+                            title: talk.name,
+                            format: talk.format,
+                            category: talk.event_type,
+                            description: talk.description,
+                            speakers: talk.speakers,
+                            start: talk.event_start,
+                            end: talk.event_end,
+                            color: categoryColors[talk.event_type]
+                        };
+                    }), function(talk) {
+                        return _.all(filters, function(filter, name) {
+                            return filter[talk[name]];
+                        });
+                    }));
+                }
             };
         }.bind(this));
 

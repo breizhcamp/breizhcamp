@@ -72,8 +72,6 @@ angular.module('programme', ['ngSanitize', 'hc.marked', 'ngLocale', 'ngAnimate',
 
             var talks = response.data;
 
-            console.log(_.uniq(_.map(talks, 'event_type')));
-
             /*
             this.days = _.transform(_.groupBy(talks, function(talk) {
                 return _.capitalize(dateFilter(new Date(talk.event_start), 'EEEE'));

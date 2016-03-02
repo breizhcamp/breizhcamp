@@ -8,7 +8,8 @@ angular.module('programme', ['ngSanitize', 'hc.marked', 'ngLocale', 'ngAnimate',
             {format: 'TiA', label: 'Tool in Action', icon: 'fa-wrench'},
             {format: 'Univ', label: 'Université', icon: 'fa-terminal'},
             {format: 'Quickie', label: 'Quickie', icon: 'fa-clock-o'},
-            {format: 'Lab', label: 'Lab', icon: 'fa-flask'}
+            {format: 'Lab', label: 'Lab', icon: 'fa-flask'},
+            {format: 'Keynote', label: 'Keynote', icon: 'fa-user'}
         ];
 
         var categoryColors = this.categoryColors = {

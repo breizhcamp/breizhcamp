@@ -149,12 +149,9 @@ angular.module('programme', ['ngSanitize', 'hc.marked', 'ngLocale', 'ngAnimate',
             });
         };
 
-
-
-
         $http.get('json/2016/speakers.json').then(function(response) {
-            var speakers = this.speakers = response.data;
-          }.bind(this));
+            this.speakers = response.data;
+        }.bind(this));
 
         this.detailsSpeaker = function(speaker) {
             $uibModal.open({

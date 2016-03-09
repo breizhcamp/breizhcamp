@@ -9,8 +9,11 @@ angular.module('programme', ['ngSanitize', 'hc.marked', 'ngLocale', 'ngAnimate',
             {format: 'Univ', label: 'Université', icon: 'fa-terminal'},
             {format: 'Quickie', label: 'Quickie', icon: 'fa-clock-o'},
             {format: 'Lab', label: 'Lab', icon: 'fa-flask'},
-            {format: 'Keynote', label: 'Keynote', icon: 'fa-user'}
+            {format: 'Keynote', label: 'Keynote', icon: 'fa-user'},
+            {format: 'Party', label: 'Party', 'icon': 'fa-glass'}
         ];
+
+        var noDetailFormats = ['Party', 'Keynote'];
 
         var categoryColors = this.categoryColors = {
             'Objects connectés, IoT, Robotique': '#4B8865',
@@ -21,7 +24,8 @@ angular.module('programme', ['ngSanitize', 'hc.marked', 'ngLocale', 'ngAnimate',
             'Java, JVM, Javas SE/EE': '#7F71CE',
             'Langages': '#6AAA3E',
             'Web': '#287F95',
-            'Keynote': '#F55E52'
+            'Keynote': '#F55E52',
+            'Other': '#AAAAAA'
         };
 
         var formats = _.indexBy(formatDefinitions, 'format');
@@ -139,6 +143,9 @@ angular.module('programme', ['ngSanitize', 'hc.marked', 'ngLocale', 'ngAnimate',
         }.bind(this));
 
         this.details = function(talk) {
+            if (_.contains(noDetailFormats, talk.format)) {
+                return;
+            }
             $uibModal.open({
                 templateUrl: 'talk-details.html',
                 controller: function() {

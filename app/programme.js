@@ -23,7 +23,7 @@ angular.module('programme', ['ngSanitize', 'hc.marked', 'ngLocale', 'ngAnimate',
             'Langages': '#6AAA3E',
             'Web': '#287F95',
             'Keynote': '#F55E52',
-            'Other': '#AAAAAA'
+            'Autre': '#AAAAAA'
         };
 
         var rooms = this.rooms = {

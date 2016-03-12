@@ -95,6 +95,7 @@ angular.module('programme', ['ngSanitize', 'hc.marked', 'ngLocale', 'ngAnimate',
         }));
         // Format filter
         filters.format = _.mapValues(formats, false);
+        filters.room = _.mapValues(rooms, false);
 
         // watch filters
         _.each(filters, function(filterObject) {

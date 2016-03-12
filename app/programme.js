@@ -13,8 +13,6 @@ angular.module('programme', ['ngSanitize', 'hc.marked', 'ngLocale', 'ngAnimate',
             {format: 'Party', label: 'Party', 'icon': 'fa-glass'}
         ];
 
-        var noDetailFormats = ['Party', 'Keynote'];
-
         var categoryColors = this.categoryColors = {
             'Objects connectés, IoT, Robotique': '#4B8865',
             'Cloud, DevOps, Outils': '#CA5132',
@@ -102,17 +100,6 @@ angular.module('programme', ['ngSanitize', 'hc.marked', 'ngLocale', 'ngAnimate',
 
             var talks = response.data;
 
-            /*
-            this.days = _.transform(_.groupBy(talks, function(talk) {
-                return _.capitalize(dateFilter(new Date(talk.event_start), 'EEEE'));
-            }), function(result, talks, day) {
-                result[day] = {
-                    talks: _.groupBy(talks, 'format')
-                };
-                return result;
-            });
-            */
-
             function activeFilters() {
                 return _.pick(filters, function(filterObject) {
                     return _.any(filterObject, Boolean);
@@ -143,7 +130,7 @@ angular.module('programme', ['ngSanitize', 'hc.marked', 'ngLocale', 'ngAnimate',
         }.bind(this));
 
         this.details = function(talk) {
-            if (_.contains(noDetailFormats, talk.format)) {
+            if (!talk.speakers || !talk.description) { // no detail if there is no description or no speaker
                 return;
             }
             $uibModal.open({

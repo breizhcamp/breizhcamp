@@ -26,6 +26,15 @@ angular.module('programme', ['ngSanitize', 'hc.marked', 'ngLocale', 'ngAnimate',
             'Other': '#AAAAAA'
         };
 
+        var rooms = this.rooms = {
+            'Track1': 'Amphi A',
+            'Track2': 'Amphi B',
+            'Track3': 'Amphi C',
+            'Track4': 'Amphi D',
+            'Track5 (labs)': 'Espace Lab',
+            'Track6': 'Hall'
+        };
+
         var formats = _.indexBy(formatDefinitions, 'format');
 
         function renderTitle(event) {
@@ -118,7 +127,8 @@ angular.module('programme', ['ngSanitize', 'hc.marked', 'ngLocale', 'ngAnimate',
                             speakers: talk.speakers,
                             start: talk.event_start,
                             end: talk.event_end,
-                            color: categoryColors[talk.event_type]
+                            color: categoryColors[talk.event_type],
+                            room: rooms[talk.venue]
                         };
                     }), function(talk) {
                         return _.all(filters, function(filter, name) {

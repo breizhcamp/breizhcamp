@@ -1,5 +1,5 @@
-# breizhcamp
-site web du breizhcamp
+# Breizhcamp
+Site web du breizhcamp
 
 
 Les contributions sont bienvenues :P
